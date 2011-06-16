@@ -1,0 +1,34 @@
+.slide1 {
+	opacity: 0;
+}
+
+.slide1 .references {
+	margin-top: 52px;
+	float: left;
+	background-color: transparent;
+	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #767579;
+	text-align: left;
+}
+
+.slide1 .references li {
+	padding: 3px 120px 20px 120px;
+	list-style-type: none;
+	background-image: url(../images/references/pdf-icon.png);
+	background-repeat: no-repeat;
+	background-position: 50px 0;
+}
+
+.slide1 .references a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.slide1 .references a span {
+	margin-right: .5em;
+	float: left;
+	font-family: "Frutiger45LightBold", sans-serif;
+	font-weight: bold;
+}

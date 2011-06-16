@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">
+
+  <link rel="stylesheet" href="content/css/slideshow.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/thumbnailmenu.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/topmenu.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/referencepopup.css" type="text/css" charset="utf-8">
+	  
+  <link rel="stylesheet" href="content/css/home.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/currenttreatment.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/typography.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/references.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/efficacy.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/efficacy0.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/rocket_af.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/rocket_af0.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/rocket_af1.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/rocket_af2.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/strokein_af.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/xeralto.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/safety.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/administration.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/summary.css" type="text/css" charset="utf-8">
+  
+ <!-- <script type="text/javascript" src="../viewer/js/monitor.js"></script>-->
+  <script type="text/javascript" src="viewer/js/pdf.js"></script>
+  
+  <script type="text/javascript" src="ALF/lib/zepto.js"></script>
+  <script type="text/javascript" src="ALF/lib/iscroll.js"></script>
+  <script type="text/javascript" src="ALF/utils/dispatchEvent.js"></script>
+ 
+ 
+  <script type="text/javascript" src="ALF/model/model.js"></script>
+  <script type="text/javascript" src="ALF/view/slides.js"></script> 
+
+  <script type="text/javascript" src="ALF/view/navigation.js"></script>
+  <script type="text/javascript" src="ALF/controller/navigationcontroller.js"></script>
+  <script type="text/javascript" src="ALF/controller/slidescontroller.js"></script>
+  <script type="text/javascript" src="ALF/controller/footercontroller.js"></script>
+  
+  <script type="text/javascript" src="ALF/view/thumbnavigation.js"></script>
+  <script type="text/javascript" src="ALF/view/footer.js"></script>
+  <script type="text/javascript" src="ALF/view/footer.js"></script>
+ 
+ 
+  <script type="text/javascript" src="ALF/utils/include.js"></script>
+  <script type="text/javascript" src="ALF/utils/gesture.js"></script>
+  <script type="text/javascript" src="ALF/appinit.js"></script>
+  
+  <script type="text/javascript">
+	  
+	 var path = 'content/';
+		 
+	 var model = new Model();
+	 var slideShow = new SlideShow();
+	 var app = new App();
+	 var gestures = new Gestures();
+	 
+	 function init() {		  
+
+		model.dynamic = false;
+		app.init();
+		slideShow.init = true;
+		
+		gestures.addSwipeListener('swipebutton');
+					 
+	   }  	   
+  	   window.addEventListener('load',init, false);
+	</script>
+  
+
+<title>ALF - Agnitio Lite Framework</title>
+  
+</head>
+<body>
+<div id="container" class="container">
+   <nav id="topnav" class="topnav">
+	  <ul id="nav">
+	  	<li>References</li>
+	  	<li id="homebutton" class="home"></li>
+	  	<li>Stroke in AF</li>
+	  	<li>Current Treatment</li>
+	  	<li>Xarelto&reg;</li>
+	  	<li>Efficacy</li>
+	  	<li>Rocket AF</li>
+	  	<li>Safety</li>
+	  	<li>Administration</li>
+	  	<li>Summary</li>
+	  </ul>   
+   </nav>
+   <div id="wrapper">
+   <!--<div id="test">test</div>-->
+   <div id="scroller">
+	
+   <section id="references_section" class="slide">
+	<article id="references1">
+	  <div class="content-wrapper">
+		  <div id="referencecontent" class="slide1">
+		  <h1>SPAF References library</h1>
+		  <ul class="references">
+			<li>
+			<a href="javascript:openPDF('docs/REF2.pdf');"><span>2.</span>
+			  Camm AJ, Kirchhof P, Lip GYH, et al. Guidelines for the management of atrial fibrillation: The Task Force for the Management of Atrial Fibrillation of the European Society of Cardiology (ESC). Eur Heart J. 2010;Oct 31(19):2369-429.</a>
+			</li>
+		   </ul>
+		  </div>
+		</div>
+		</article>
+	  </section>
+	  
+	  <section id="home_section" class="slide">  
+		 <article id="home1">
+		   <div class="slide0" id="home">
+		   <div class="frontLeg"><br /></div>
+		   <div class="frontSpafContainer">
+		   <div class="frontBrain"><img src="content/images/home/shadowDividingline.png" /></div>
+		   <p class="frontTitle">Stroke Prevention<br />for Patients with Atrial Fibrillation</p>
+		   <div class="frontVein"><br /></div>
+		   </div>
+		   </div>
+		   <div id="swipebutton" class="swipebutton"></div>
+		</article>
+	   </section>
+	   
+	<section id="stroke_in_af_section" class="slide">
+		<article id="stroke_in_af">
+		   <div class="slide3" id="stroke_stickmen">
+			  <h1>
+		   <span>Stroke Disables and Kills<br/>
+		   Millions Worldwide<sup>1</sup></span>
+	   </h1>
+
+	   <p class="subHead">
+	   <em>
+		   Patients with atrial fibrillation (AF) have an<br/>
+		   increased risk of stroke compared with the general population<sup>2</sup>:
+	   </em>
+	   </p>
+	   <ul class="foldContainer">
+		   <li class="foldButton0">None</li>
+		   <li class="foldButton2">2-FOLD</li>
+		   <li class="foldButton3">3-FOLD</li>
+		   <li class="foldButton4">4-FOLD</li>
+		   <li class="foldButton5">5-FOLD</li>
+	   </ul>
+		<div class="module clean">
+		   <p class="slide3Statement0"><em>AF strokes more severely impact patients compared<br />with other strokes<sup>2</sup></em></p>
+		   <ul>
+			   <li class="slide3Statement1">In the year following a stroke, AF patients face a<br /><b>50%</b> risk of death<sup>3</sup></li>
+			   <li class="slide3Statement2">More than <b>half</b> of patients with AF-related<br />strokes will become disabled<sup>4</sup></li>
+		   </ul>
+		</div>
+	   <div class="stickMan stickMan0 fold4 fold3 fold2 fold0"></div>
+	   <div class="stickMan stickMan1 fold4 fold3 fold2 fold0"></div>
+	   <div class="stickMan stickMan2 fold4 fold3 fold2"></div>
+	   <div class="stickMan stickMan3 fold4 fold3 fold2"></div>
+	   <div class="stickMan stickMan4 fold4 fold3"></div>
+	   <div class="stickMan stickMan5 fold4 fold3"></div>
+	   <div class="stickMan stickMan6 fold4"></div>
+	   <div class="stickMan stickMan7 fold4"></div>
+	   <div class="stickMan stickMan8"></div>
+	   <div class="stickMan stickMan9"></div>
+	</div>
+	<div id="references_stroke" slide-id="stroke_in_af" class="referencesbutton"></div>
+	</article>
+   </section>
+	
+		<section id="current_treatment_section" class="slide">
+		<article id="current_treatment" monitor-id="">
+			<div class="slide4 content-wrapper">
+				<h1>Warfarin Limitations can Leave Many Patients Unprotected</h1>
+				<p>Anticoagulation effectively protects strokes, yet<br />
+				<em>Warfarin drawbacks can challenge even your best efforts<sup>5</sup></em></p>
+				<div class="card-container">
+					<div class="card">
+						<ul class="boxes module face front">
+							<li><span>Unpredictable<br />anticoagulation</span></li>
+							<li><span>Frequent dose<br />adjustments</span></li>
+							<li><span>Coagulation monitoring</span></li>
+							<li><span>Many drug-drug<br />interactions</span></li>
+							<li><span>Dietary restrictions</span></li>
+							<li><span>Patient adherence</span></li>
+						</ul>
+						<ul class="men module face back">
+							<li><br /></li>
+							<li><br /></li>
+							<li><br /></li>
+							<li><br /></li>
+							<li><br /></li>
+							<li><br /></li>
+							<li><br /></li>
+							<li><br /></li>
+							<li><br /></li>
+							<li><br /></li>
+						</ul>
+					</div>
+				</div>
+				<p class="subTextMain hideElem"><em>The potential result of limitations-AF patients receive<br /> no anticoagulation or inadequate anticoagulation</em></p>
+				<ul class="subTexts">
+					<li class="hideElem subText1">Despite guidelines, only <span class="pinkEm">50%</span> of AF patients<br />who need prophylaxies recieve it<sup>6</sup></li>
+					<li class="hideElem subText2">Only <span class="pinkEm">1 in 10</span> AF patients is adequately<br />anticoagulated at the time of first stroke<sup>4</sup></li>
+				</ul>
+			</div>
+			<div id="references_current_treatment" slide-id="current_treatment" class="referencesbutton"></div>
+		 </article>
+	   </section>
+	   
+	   <section id="xarelto_section" class="slide">
+	   <div id="xareltowrapper" class="internalwrapper">
+	   <div id="xeraltoscroller" class="internalscroller">
+		  <article class="innerslide morebelow" id="xarelto_slide1">
+			<div class="slide5">
+					<h1><span>One Tablet, Once Daily<br />Xarelto Simplifies Protection From Stroke<sup>7</sup></span></h1>
+				   <div class="module clean">
+					   <p>SHIFT TO SIMPLE PROTECTION</p>
+				   </div>
+
+					<div id="pilldrag" class="dragdealer">
+						<div class="handle"></div>
+					</div>
+
+					<table>
+						<tr>
+						   <td class="noborder"><br /></td>
+						   <td class="warfarin noborder" rowspan="2">Warfarin<br /><span>VKAs</span></td>
+						   <td class="xarelto noborder" rowspan="2">Xarelto<br /><span>Direct Factor Xa<br />Inhibitor</span></td>
+					   </tr>
+						<tr>
+						   <td class="noborder"><br /></td>
+					   </tr>
+						<tr>
+						   <td>Once-daily administration</td>
+						   <td class="warfarin stateChecked"></td>
+						   <td class="xarelto stateChecked"></td>
+					   </tr>
+						<tr>
+						   <td>Fast onset of action</td>
+						   <td class="warfarin">&nbsp;</td>
+						   <td class="xarelto stateChecked"></td>
+					   </tr>
+						<tr>
+						   <td>Reliable fixed dose</td>
+						   <td class="warfarin">&nbsp;</td>
+						   <td class="xarelto stateChecked"></td>
+					   </tr>
+						<tr>
+						   <td>No need for coagulation monitoring</td>
+						   <td class="warfarin"></td>
+						   <td class="xarelto stateChecked"></td>
+					   </tr>
+						<tr>
+						   <td>Low risk of drug-drug interactions</td>
+						   <td class="warfarin"></td>
+						   <td class="xarelto stateChecked"></td>
+					   </tr>
+						<tr>
+						   <td>No dietary restrictions</td>
+						   <td class="warfarin"></td>
+						   <td class="xarelto stateChecked"></td>
+					   </tr>
+						<tr>
+						   <td colspan="3" class="endStatement"><p>The end of complicated anticoagulation.<br />The beginning of simple stroke prevention.</p></td>
+					   </tr>
+					</table>
+			   </div>
+			<div id="references_xarelto" slide-id="xarelto_slide1" class="referencesbutton"></div>
+		 </article>
+		
+		<article class="innerslide moreabove" id="xarelto_slide2">
+			<div class="content-wrapper">
+				<h1>5.1 MOA</h1>
+			</div>
+			<div id="references_xarelto2" slide-id="xarelto_slide2" class="referencesbutton"></div>
+		</article>
+		
+		</div>
+		</div>
+		</section>	   
+	
+	   
+		  <section id="efficacy_section" class="slide">
+					<div id="internalwrapper" class="internalwrapper">
+					<div id="efficacyscroller" class="internalscroller">
+					<article class="innerslide morebelow" id="efficacy_slide1">
+						<div class="content-wrapper slide6 itemStates">
+						    <h1>Superior Protection with Xarelto<sup>&reg;</sup></h1>
+						    <p>Active treatment with once-daily Xarelto vs warfarin in AF patients</p>
+						    <div class="hideElem" style="height: 420px;">
+						        <p><em>Significantly reduces <em>stroke</em> and <em>systemic embolism</em><sup>12</sup></em></p>
+						        <div class="module don" id="graph1">
+						            <div class="legend">CULMATIVE<br/>EVENT RATE (%)</div>
+						            <div class="effGraphArrow"><br /></div>
+						        </div>
+						        <div class="ref1">
+						            <p>Pre-specified, on treatment analysis in the safety population.</p>
+						        </div>
+						    </div>
+						    <div class="hideElem" style="height: 420px;">
+						    <p><em>Significantly reduces <em>overall CV outcomes</em><br/><span>(composite of stroke, systemic embolism, MI, and vascular death<sup>12</sup>)</span></em></p>
+						        <div class="module don" id="graph2">
+									<div class="legend">Event rate per<br/>100 PT-YRS</div>		
+									<ul class="pillars">
+										<li class="brown">
+											<div class="pillar">
+												<img src="content/images/efficacy/pillar-brown.png" alt="">
+											</div>
+										</li>
+										<li class="magenta">
+											<div class="pillar">
+												<img src="content/images/efficacy/pillar-magenta.png" alt="">
+											</div>
+										</li>
+									</ul>
+									<img src="content/images/efficacy/drop-arrow.png" alt="" class="dropArrow"/>
+								</div> 
+						        <div class="ref2">
+						            <p>All values are expressed as event rateper 100 patient-years and are<br/>
+						             from the pre-specified, on-treatment analysis in the safety population</p>
+						        </div>                           
+						    </div>                        
+						    <ul class="dLinks">
+						        <li class="dLink1">Stroke and<br /> Systemic Embolism</li>
+						        <li class="dLink2">Overall CV <br />Outcomes</li>
+						    </ul>
+						</div>
+						
+					<div id="references_efficacy" slide-id="efficacy_slide1" class="referencesbutton"></div>
+				</article>
+		  
+		       <article class="innerslide moreabove" id="efficacy_slide2">
+					 <div class="efficacy_background">
+		  			 <h1><a href="#">Trust a Benefit-Risk Profile <br/>with Proven Protection</a></h1>
+		  			 <p>AF patients on Xarelto benefit from better overall protection: <br/>
+		  			 superior efficacy and demonstrated safety<em>Multiple points of protection with Xarelto<sup>&reg;</sup></em>
+		  			 </p>
+		  			 <div class="efficacy0"></div>
+					  </div>
+					<div id="references_efficacy2" slide-id="efficacy_slide2" class="referencesbutton"></div>
+			    </article>
+			 </div>
+			</div>
+			</section>		  
+		  
+			<section id="rocketAF_section" class="slide">
+			<!--Internal slides start-->
+			 <div id="rocketwrapper" class="internalwrapper">
+			   <div id="rocketscroller" class="rocketscroller">
+			   <!--First slide start-->
+			   <article class="innerslide morebelow" id="rocketAF_slide1">
+				 <!--Content start-->
+				<div class="rocketaf" id="rocket_af_content1">
+					<h1>The Largest Stroke Prevention Trial of its Kind</h1>
+					<div class="moduleClean">
+						ROCKET AF is a pivotal,<br />
+						<b>double-blind</b> study<br />
+						with over <b>14,000</b> AF patients<br />
+						from more than <b>1,000</b> sites<br />
+						across <b>45</b> countries worldwide<br />
+						with a <b>2-year</b> mean follow up<sup>6,8</sup>
+					</div>
+				</div>
+				<div id="references_rocket1" slide-id="rocketAF_slide1" class="referencesbutton"></div>
+			   </article>
+				 <!--First slide end-->
+			   <article class="innerslide morebelow moreabove" id="rocketAF_slide2">
+			   <div class="rocketaf1">
+				   <h1>ROCKET AF is a Rigorous, Double-Blind Stroke Prevention Trial<sup>6,8</sup></h1>
+				   <div class="module">
+					   <div class="fig6_1_left">
+						   Included non-valvular AF<br />
+						   patients with a history of<br />
+						   stroke, TIA, or non-CNS<br />
+						   systemic embolism<br />
+						   <br />
+						   OR <img src="content/images/rocket_af/2.png" width="8" height="14" alt="=&gt;" />2<sup>a</sup> of the following<br />
+						   stroke risk factors:<br />
+						   - Heart failure<br />
+						   - Hypertension<br />
+						   - Age <img src="content/images/rocket_af/2.png" width="8" height="14" alt="=&gt;" />75 years<br />
+						   - Diabetes
+					   </div>
+					   <div class="fig6_1_right">
+						   <p class="label1">Randomisation</p>
+						   <p class="label2">N=14,264</p>
+						   <p class="label3">rivaroxaban 20 mg once daily</p>
+						   <p class="label4">rivaroxaban 15 mg once daily<br />
+						   (CrCl 30-49 mL/min at entry)</p>
+			   
+						   <p class="label5">warfarin target INR of 2.5<br />
+						   (INR range 2-3)</p>
+						   <p class="label6">2-year median follow-up</p>
+						   <p class="label7">End of study</p>
+					   </div>
+				   </div>
+				   <div class="footnote">Duke Clinical Research Institute coordinated the trial, managed the database, and performed primary analysis independent of sponsors</div>
+				  </div>
+				  <div id="references_rocket2" slide-id="rocketAF_slide2" class="referencesbutton"></div>
+				 </article>
+				 
+				 <article class="innerslide morebelow moreabove" id="rocketAF_slide3">
+				   <div class="slide6-2">
+					   <h1>ROCKET AF is a Rigorous, Double-Blind Stroke Prevention Trial<sup>6,8</sup></h1>
+					   <div class="module">
+						   <p>Primary outcome measure:</p>
+						   <ul>
+							   <li><b>A composite of stroke and systemic embolism (SE)<sup>6,8</sup></b></li>
+						   </ul>
+				   
+						   <p>Secondary outcome measures:</p>
+						   <ul>
+							   <li>A composite of stroke, SE, and vascular death<sup>6</sup></li>
+							   <li>A composite of stroke, SE, myocardial infarction (MI),<br />and vascular death<sup>6</sup></li>
+						   </ul>
+				   
+						   <p>Principal safety outcome measure:</p>
+						   <ul>
+							   <li>A composite of major and non-major clinically relevant<br />(NMCR) bleeding events<sup>6,8</sup></li>
+						   </ul>
+					   </div>
+					   <div class="moduleFootnote">* Enrollment of patients without prior Stroke, TIA or systemic embolism and only 2 factors capped at 10%.</div>
+					   <div class="footnote">Duke Clinical Research Institute coordinated the trial, managed the database, and performed primary analysus independent of sponsors</div>
+				   </div>
+                   <div id="references_rocket3" slide-id="rocketAF_slide3" class="referencesbutton"></div>
+				 </article>
+				 
+				 <article id="rocketAF_slide4" class="innerslide moreabove">
+					 <div class="slide6-3">
+						 <h1>ROCKET AF Studied Patients Commonly Seen in Daily Practice</h1>
+						 <p><em>In the landmark trial, Xarelto was studied across a wide range of patients<sup>8</sup></em></p>
+						 <div class="module clean">
+							 <p>PATIENT DEMOGRAPHICS</p>
+						 </div>
+					 
+						 <table>
+					 		<tr>
+								 <td class="noborder"><br /></td>
+								 <td class="xarelto noborder tableHead">Xarelto</td>
+							 </tr>
+					 		<tr>
+								 <td>Age</td>
+								 <td class="xarelto">73 years</td>
+							 </tr>
+					 		<tr>
+								 <td>Hypertension</td>
+								 <td class="xarelto">90%</td>
+							 </tr>
+					 		 <tr>
+								 <td>CHF</td>
+								 <td class="xarelto">63%</td>
+							 </tr>
+					 		  <tr>
+								 <td>Prior Stroke/TIA/Systemic embolism</td>
+								 <td class="xarelto">55%</td>
+							 </tr>
+					 		<tr>
+								 <td>Diabetes</td>
+								 <td class="xarelto">40%</td>
+							 </tr>
+					 		<tr>
+								 <td>Prior MI</td>
+								 <td class="xarelto">17%</td>
+							 </tr>
+						 </table>
+						 <div class="footnote">Duke Clinical Research Institute coordinated the trial, managed the database, and performed primary analysus independent of sponsors</div>
+					 </div>
+					 <div id="references_rocket4" slide-id="rocketAF_slide4" class="referencesbutton"></div>
+				 </article>
+				</div>
+				</div>
+			</section>
+			
+			
+			<section id="safety_section" class="slide">
+			<div id="safetywrapper" class="internalwrapper">
+			<div id="safetyscroller" class="safetyscroller">
+			<article class="innerslide morebelow" id="safety_slide1">
+			<div class="slide7">
+			<h1>Xarelto<sup>&reg;</sup> Significantly Reduces<br/>ICH and Fatal Bleeding Events</h1>
+			<p>Active treatment with once-daily Xarelto vs. Warfarin in AF patients shows similar overall<br/>bleeding in the composite of major and non-major clinically relevant bleeding events<em>Reduce the risk of the most critical bleeds in your AF patients<sup>12</sup></em></p>
+
+			<dl class="diamonds">
+				<dt>50%<span>RRR</span></dt>
+				<dd><p><em>Reduced fatal bleeding events </em>Xarelto (0.24) vs. Warfarin (0.48), <i>P</i>=0.003<sup>12</sup></p></dd>
+				<dt>33%<span>RRR</span></dt>
+				<dd><p><em>Fewer ICH events </em>Xarelto (0.49) vs. Warfarin (0.74), <i>P</i>=0.019<sup>12</sup></p></dd>
+				<dt>31%<span>RRR</span></dt>
+				<dd><p><em>Fewer critical organ bleeding events </em>Xarelto (0.82) vs. Warfarin (1.18), <i>P</i>=0.007<sup>12</sup></p></dd>
+			</dl>
+			<div class="ref zoom">
+				<p>All values are expressed as event rate per 100 patient-years. Patients on Xarelto had significant increases in the following major bleeding events:a ≥2 g/dL fall in haemoglobin (2.8% vs. 2.3%, P=0.019) and transfusions (1.7% vs. 1.3%, P=0.044).</p>
+				<p><strong>Major bleeding</strong>: bleeding associated with a ≥2 g/dL fall in haemoglobin or requirement for transfusion of ≥2 units of packed red blood cells orwhole blood (clinically overt bleeding); the involvement of a critical site; or a fatal outcome.</p>
+				<p><strong>Non-major clinically relevant bleeding</strong>: overt bleeding not meeting the criteria for major bleeding but associated with medical intervention; unscheduled contact with a physician; temporary study drug cessation; pain; or impairment of daily activities. ICH=intracranial haemmorhagic.</p>
+			</div>
+			</div>
+			<div id="safetylink" slide-id="safety_slide1" class="referencesbutton"></div>
+			</article>
+			
+			<article class="innerslide moreabove" id="safety_slide2">
+			<div>
+			<h1><a href="#">Trust a Benefit-Risk Profile <br/>with Proven Protection</a></h1>
+			<p>AF patients on Xarelto benefit from better overall protection: <br/>
+			superior efficacy and demonstrated safety<em>Multiple points of protection with Xarelto<sup>&reg;</sup></em>
+			</p>
+			<div class="efficacy0"></div>
+			</div>
+			<div id="safetylink" slide-id="safety_slide2" class="referencesbutton"></div>
+			</article>
+			</div>
+			</div>
+			</section> 
+			
+			<section id="administration_section" class="slide">
+			<article id="administration_slide">
+			  <div class="slide8">
+			     <h1><a href="#">One-Tablet, Once-Daily Xarelto<sup>&reg;</sup> -<br/>More Protection with Less Worry<sup>7</sup></a></h1>
+			     <p><em>Superior protection in one simple fixed dose<sup>7</sup></em></p>
+
+			<dl class="diamonds wide">
+				<dt>20mg</dt>
+				<dd><img src="content/images/administration/pill.png" alt=""/><p>One 20-mg tablet, once daily for your AF patients<sup>7</sup></p></dd>
+			</dl>
+
+			<p class="ref">One 15-mg tablet, once daily for patients with moderate renal impairment (creatinine clearance of 30-49 mL/min)<sup>7</sup></p>
+
+			<ul class="foldouts clickAndAnimate">
+				<li>
+					<a href="#" class="toggler">
+						<h3>Simple to initiate</h3>
+						<div class="content">
+							<ul>
+								<li>For your new AF patients, Xarelto provides protection from day one<sup>15</sup></li>
+								<li>For AF patients taking VKA, stop VKA treatment. Once INR ≤ 3.0, start Xarelto<sup>7</sup></li>
+							</ul>
+						</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="#" class="toggler">
+						<h3>Simple to manage</h3>
+						<div class="content">
+							<ul>
+								<li>No coagulation monitoring, low risk of drug-drug interactions, no dietary restrictions<sup>8</sup></li>
+								<li>Good tolerability<sup>12</sup></li>
+							</ul>
+						</div>
+					</a>
+				</li>
+			</ul>
+
+			<div class="ref bottom">
+				<p>VKA= vitamin K antagonist.<br/>Xarelto is not recommended for patients with prosthetic heart valves.</p>
+			</div>
+		    </div>
+		    <div id="references_administration" slide-id="administration_slide" class="referencesbutton"></div>
+			</article>
+			</section> 
+		   
+			<section id="summary_section" class="slide">
+			<article id="summary_slide">
+		   		<div class="slide9">
+				<h1><a href="#">Once-Daily Xarelto<sup>&reg;</sup> Simply Protects<br/>More of Your AF Patients</a></h1>
+				<p><em>Active treatment with once-daily Xarelto vs. Warfarin:</em></p>
+	
+				<ul class="diamonds clickAndAnimate">
+					<li class="activ">
+						<a href="#" class="toggler">
+							<h3>Simply</h3>
+							<div class="content">
+								<p><em>PROVIDING SUPERIOR PROTECTION</em><br/>against stroke and systemic embolism<sup>12</sup></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="toggler">
+							<h3>Protecting</h3>
+							<div class="content">
+								<p><em>AGAINST MOST CRITICAL BLEEDS</em><br/>including ICH and fatal bleeding events<sup>12</sup></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="toggler">
+							<h3>More</h3>
+							<div class="content">
+								<p><em>CARDIOVASCULAR PROTECTION</em> with reduced overall CV outcomes (composite of stroke, systemic embolism, MI, and vascular death)<sup>12</sup></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="toggler">
+							<h3>Patients</h3>
+							<div class="content">
+								<p><em>BENEFIT FROM SIMPLIFIED TREATMENT</em> with one-tablet, once-daily dosing with no monitoring<sup>7,9</sup></p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			   </div>
+			  <div id="references_summary" slide-id="summary_slide" class="referencesbutton"></div>
+		 </article>
+		</section>	  
+	  
+	  </div>
+   </div>
+   <div id="thumbnav" class="thumbnav">
+   
+   <ul section-id="xarelto_section">
+   	<li><img src="content/images/thumbnails/T_4.0.png" alt=""></li>
+   	<li><img src="content/images/thumbnails/T_4.1.png" alt=""></li>
+   </ul>
+   
+   	<ul section-id="efficacy_section">
+   		<li><img src="content/images/thumbnails/T_5.0.png" alt=""></li>
+   		<li><img src="content/images/thumbnails/T_7.1.png" alt=""></li>
+   	</ul>
+   	<ul section-id="rocketAF_section">
+   		<li><img src="content/images/thumbnails/T_6.0.png" alt=""></li>
+   		<li><img src="content/images/thumbnails/T_6.1.png" alt=""></li>
+   		<li><img src="content/images/thumbnails/T_6.2.png" alt=""></li>
+   		<li><img src="content/images/thumbnails/T_6.3.png" alt=""></li>
+   	</ul>
+  
+   	<ul section-id="safety_section">
+   		<li><img src="content/images/thumbnails/T_7.0.png" alt=""></li>
+   		<li><img src="content/images/thumbnails/T_7.1.png" alt=""></li>
+   	</ul>
+   	
+   </div>
+   
+   <div id="footer" class="footer"></div>  
+   </div>
+   
+   <div id="popupWindow" class="popupWindow">
+	  <div id="popupupContainer" class="popupContainer">
+	  <div id="popup" class="popup">
+	  
+			<ul slide-id="stroke_in_af" class="references">
+			 	<li>
+			 	<a href="javascript:openPDF('docs/RRef01_Di_Carlo-Humanandeconomicburdenofstroke');"><span>1.</span>
+			 	   Di Carlo - Human and economic burden of stroke</a>
+			 	</li>
+			 	<li>
+			 	<a href="javascript:openPDF('docs/Ref02_Kannel-PrevalenceincidencePrognosis.pdf');"><span>2.</span>
+			 	   Kannel-Prevalence, incidence, Prognosis</a>
+			 	</li>
+			 	<li>
+			 	<a href="javascript:openPDF('docs/Ref03_Marinietal-ContributionofAtrialFibrillationtoIncidenceandOutcomeofIschemicStroke');"><span>3.</span>
+			 	   Marini et al-Contribution of Atrial Fibrillation to Incidence and Outcome of Ischemic Stroke</a>
+			 	</li>
+			 	<li>
+			 	<a href="javascript:openPDF('docs/Ref04_Gladstone-PotentiallyPreventableStrokesinHigh-RiskPatientsWithAtrialFibrillation.pdf');"><span>4.</span>
+			 	   Gladstone - Potentially Preventable Strokes in High-Risk Patients With Atrial Fibrillation</a>
+			 	</li>
+			 </ul>
+			
+		 	<ul slide-id="current_treatment" class="references">
+		 		<li>
+		 		<a href="javascript:openPDF('docs/Ref04_Gladstone-PotentiallyPreventableStrokesinHigh-RiskPatientsWithAtrialFibrillation.pdf');"><span>4.</span>
+		 		   Gladstone - Potentially Preventable Strokes in High-Risk Patients With Atrial Fibrillation</a>
+		 		</li>
+		 		<li>
+		 		<a href="javascript:openPDF('docs/Ref05_Warfarin_SPC.pdf');"><span>5.</span>
+		 		    Warfarin SPC</a>
+		 		</li>
+		 		<li>
+		 		<a href="javascript:openPDF('docs/Ref06_Waldo-HospitalizedPatientsWithAtrialFibrillationandaHighRiskofStroke.pdf');"><span>6.</span>
+		 		  Waldo - Hospitalized Patients With Atrial Fibrillation and a High Risk of Stroke</a>
+		 		</li>
+		 	</ul>
+		 	
+		 	<ul slide-id="xarelto_slide1" class="references">
+		 		<li>
+		 		<a href="javascript:openPDF('docs/Ref07_Xarelto_Summary_of_Product_Characteristics_Jan2011.pdf');"><span>7.</span>
+		 		   Xarelto Summary of Product Characteristics Jan2011</a>
+		 		</li>
+		 	</ul>
+		 	
+		 	<ul slide-id="xarelto_slide2" class="references">
+				<li>
+				<a href="javascript:openPDF('docs/Ref07_Xarelto_Summary_of_Product_Characteristics_Jan2011.pdf');"><span>7.</span>
+				   Xarelto Summary of Product Characteristics Jan2011</a>
+				</li>
+			</ul>
+		 	
+		 	<ul slide-id="efficacy_slide1" class="references">
+		 		<li>
+		 		<a href="javascript:openPDF('docs/Ref07_Xarelto_Summary_of_Product_Characteristics_Jan2011.pdf');"><span>12.</span>
+		 		  holder</a>
+		 		</li>
+		 	</ul>
+		 	
+		 	<ul slide-id="efficacy_slide2" class="references">
+		 		<li>
+		 		<a href="javascript:openPDF('docs/Ref07_Xarelto_Summary_of_Product_Characteristics_Jan2011.pdf');"><span>12.</span>
+		 		  holder</a>
+		 		</li>
+		 	</ul>
+		 	
+		 	<ul slide-id="rocketAF_slide1" class="references">
+			 	<li>
+			 	<a href="javascript:openPDF('docs/Ref11_DesignRocketAF.pdf');"><span>11.</span>
+			 	  Design Rocket AF</a>
+			 	</li>
+		 	</ul>
+		 	
+		 	<ul slide-id="rocketAF_slide2" class="references">
+		 		<li>
+		 		<a href="javascript:openPDF('docs/Ref11_DesignRocketAF.pdf');"><span>11.</span>
+		 		  Design Rocket AF</a>
+		 		</li>
+		 		<li>
+		 		 <a href="javascript:openPDF('docs/Ref11_DesignRocketAF.pdf');"><span>12.</span>
+		 		  holder</a>
+		 		</li>
+		 	</ul>
+		 	
+		 	<ul slide-id="rocketAF_slide3" class="references">
+		 		<li>
+		 		<a href="javascript:openPDF('docs/Ref11_DesignRocketAF.pdf');"><span>11.</span>
+		 		  Design Rocket AF</a>
+		 		</li>
+		 		<li>
+		 		 <a href="javascript:openPDF('docs/Ref11_DesignRocketAF.pdf');"><span>12.</span>
+		 		  holder</a>
+		 		</li>
+		 	</ul>
+		 	
+		 	<ul slide-id="rocketAF_slide4" class="references">
+		 		<li>
+		 		<a href="javascript:openPDF('docs/Ref13_Hacke-BaselinecharacteristicsofROCKETAFstudy.pdf');"><span>13.</span>
+		 		  Hacke - Baseline characteristics of ROCKET AF study</a>
+		 		</li>
+		 	</ul>
+		 	
+		 	<ul slide-id="safety_slide1" class="references">
+		 		<li>
+		 		 <a href="javascript:openPDF('docs/Ref11_DesignRocketAF.pdf');"><span>12.</span>
+		 		  holder</a>
+		 		</li>
+		 	</ul>
+		 	
+		 	<ul slide-id="safety_slide2" class="references">
+		 		<li>
+		 		 <a href="javascript:openPDF('docs/Ref11_DesignRocketAF.pdf');"><span>12.</span>
+		 		  holder</a>
+		 		</li>
+		 	</ul>
+		 	
+		 	<ul slide-id="administration_slide" class="references">
+			 	<li>
+			 	<a href="javascript:openPDF('docs/Ref07_Xarelto_Summary_of_Product_Characteristics_Jan2011.pdf');"><span>7.</span>
+			 	   Xarelto Summary of Product Characteristics Jan2011</a>
+			 	</li>
+			 	<li>
+			 	<a href="javascript:openPDF('docs/Ref08_Perzborn-Thediscoveryanddevelopmentofrivaroxaban.pdf');"><span>8.</span>
+			 	   Perzborn - The discovery and development of rivaroxaban</a>
+			 	</li>
+		 		<li>
+		 		 <a href="javascript:openPDF('docs/Ref11_DesignRocketAF.pdf');"><span>12.</span>
+		 		  holder</a>
+		 		</li>
+		 		<li>
+		 		 <a href="javascript:openPDF('docs/Ref15_Kubitza-Safetypharmacodynamics.pdf');"><span>15.</span>
+		 		  Kubitza - Safety, pharmacodynamics</a>
+		 		</li>
+		 	</ul>
+		 	
+		 	<ul slide-id="summary_slide" class="references">
+			 	<li>
+			 	<a href="javascript:openPDF('docs/Ref07_Xarelto_Summary_of_Product_Characteristics_Jan2011.pdf');"><span>7.</span>
+			 	   Xarelto Summary of Product Characteristics Jan2011</a>
+			 	</li>
+			 	<li>
+			 	<a href="javascript:openPDF('docs/Ref09_Perzborn-Invitroandinvivostudiesofthenovelantithromboticagent.pdf');"><span>9.</span>
+			 	   Perzborn - In vitro and in vivo studies of the novel antithrombotic agent</a>
+			 	</li>
+		 		<li>
+		 		 <a href="javascript:openPDF('docs/Ref11_DesignRocketAF.pdf');"><span>12.</span>
+		 		  holder</a>
+		 		</li>
+		 	</ul>
+	
+	  </div>
+   </div>
+   <div class="closebutton" id="popupclosebutton"></div>
+  </div>
+</body>
+</html>   

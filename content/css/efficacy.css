@@ -1,0 +1,81 @@
+/* Slide 6 Styles */
+.slide6 {
+	position: absolute;
+	top: 0px;
+	background: url(../images/xeralto/clotman_5.png) -75px 5px no-repeat,
+	url(../images/efficacy/clotman_6.png) -8px 662px no-repeat,
+	url(../images/efficacy/clotman_7.png) 860px 345px no-repeat;
+	width: 100%;
+	height: 716px;
+}
+.slide6 #graph1 {
+	position: absolute;
+width: 559px; height: 317px; left: 190px; background-image: url(../images/efficacy/6.0a_graph.png);
+}
+.slide6 #graph2 {
+	position: absolute;
+	width: 559px; height: 309px; left: 210px; background-image: url(../images/efficacy/graph.png);
+
+}
+.slide6 .hideElem { display: none;}
+.slide6 .dLinks li.dSelected { background-position: 0px -80px; }
+.slide6 .dLinks { bottom: 50px; left: 10px; list-style: none; margin-left: 80px; position: absolute; }
+.slide6 .dLinks li {background: url(../images/efficacy/Diamond_Sprite.png) no-repeat; color: #48247e; float: left; font-family: "FrutigerLTStd77BlackCondensed", sans-serif; font-size: 16px; padding: 20px 8px 22px 75px;  }
+
+.slide6 .effGraphArrow { background: url(../images/efficacy/6aarrow.png) no-repeat; height: 132px; left: 610px; position: absolute; top: 10px; width: 157px;}
+.slide6 .ref1 { left: 190px; position: absolute; top: 472px; }
+.slide6 .ref2 { left: 10px; position: absolute; top: 725px; }
+.slide6 .ref1 p, .slide6 .ref2 p { color: black;  font-family: "Frutiger55RomanRegular", sans-serif; font-size: 13px;  text-align: left; }
+
+.slide6 .module .pillars { background-color: white; bottom: -16px; float: left; left: 60px; position: absolute; width: 400px; z-index: 4; }
+
+.slide6 .module .pillars li { float: left; height: 290px; list-style-type: none; margin-left: 63px; overflow: hidden; position: relative; width: 165px; }
+.slide6 .module .pillars li:first-child { margin-left: 0px; }
+.slide6 .module .pillars li .pillar { bottom: 0; float: left; left: 0; position: absolute; }
+
+.slide6 .module .pillars li .pillar img { float: left;
+	-webkit-transition-duration: 500ms; }
+	
+.slide6 .module .pillars li.brown img {
+	-webkit-transform: translate3d(0,220px,0); }
+
+.slide6 .module .pillars li.magenta img {
+	-webkit-transform: translate3d(0,189px,0); }
+
+.slide6 .module.active .pillars li img, .endState .slide6 .module .pillars li img  {
+	-webkit-transform: translate3d(0,0,0); }
+
+.slide6 .dropArrow { left: 295px; position: absolute; top: 309px; z-index: 3;
+	-webkit-transform: translate3d(0,-101px,0);
+	-webkit-transition-duration: 500ms; }
+
+.slide6 .module.done .dropArrow, .endState .slide6 .module .dropArrow {
+	-webkit-transform: translate3d(0,0,0); }
+
+.slide6 .dLinks { bottom: 50px; left: 10px; position: absolute; }
+
+.slide6 .legend {
+	width: 100px;
+	position: absolute;
+	top: 16px;
+	left: -107px;
+	font-family: "Frutiger55RomanBold", sans-serif;
+	font-size: .9em;
+	text-align: right;
+}
+.slide6 .module .legend, .module .source {
+	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+	font-weight: normal;
+}
+
+.slide6 .module {
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	margin-bottom: 2em;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background-color: white;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}

@@ -1,0 +1,37 @@
+.thumbnav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 0px;
+	width: 100%;
+	background-color: transparent;
+	overflow: hidden;
+	opacity: 1;
+	z-index: 3;
+	background-image: url(../images/app/pagethumbs/background.png);
+	background-repeat: repeat-x;
+	-webkit-transition: all 0.2s ease-in;
+	-webkit-transform: translate3d(0,0,0);
+	overflow: hidden;
+}
+.thumbnav.open {
+	height: 209px;;
+}
+.thumbnav ul {
+	width: auto;
+	height: 209px;
+	position: relative;
+	z-index: 4;
+	white-space: nowrap;
+	float: left;
+}
+.thumbnav li {
+	padding-top: 9px;
+	position: relative;
+	float: left;
+	display: block;
+	list-style-type: none;
+}
+.thumbnav li .current {
+	background-image: url(../images/app/pagethumbs/current.png);
+}
